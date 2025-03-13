@@ -16,13 +16,16 @@ public class KataTests
         Assert.Equal(expectedResult, result);
     }
 
-    [Fact]
-    public void DuplicateChars()
+    [Theory(DisplayName = "Duplicate chars are encoded as ')'")]
+    [InlineData("aa", "))")]
+    [InlineData("recede", "()()()")]
+    [InlineData("Success", ")())())")]
+    public void DuplicateChars(string word, string expectedResult)
     {
         // act
-        var result = Kata.DuplicateEncode("aa");
+        var result = Kata.DuplicateEncode(word);
         
         // assert
-        Assert.Equal("))", result);
+        Assert.Equal(expectedResult, result);
     }
 }
