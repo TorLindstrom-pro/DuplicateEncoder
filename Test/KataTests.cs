@@ -15,4 +15,14 @@ public class KataTests
         // assert
         Assert.Equal(expectedResult, result);
     }
+
+    [Fact]
+    public void DuplicateChars()
+    {
+        // act
+        var result = Kata.DuplicateEncode("aa");
+        
+        // assert
+        Assert.Equal("))", result);
+    }
 }
