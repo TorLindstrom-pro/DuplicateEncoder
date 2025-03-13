@@ -2,12 +2,12 @@ namespace DuplicateEncoder;
 
 public class Kata
 {
-	public static string DuplicateEncode(string empty)
+	public static string DuplicateEncode(string word)
 	{
-		return empty.Aggregate("", (result, letter) => 
+		return word.Aggregate("", (result, letter) => 
 			result + EncodeLetter(letter));
 
 		string EncodeLetter(char currentLetter) => 
-			empty.Count(letter => letter == currentLetter) > 1 ? ")" : "(";
+			word.Count(letter => letter == currentLetter) > 1 ? ")" : "(";
 	}
 }
