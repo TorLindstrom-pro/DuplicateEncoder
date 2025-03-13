@@ -4,6 +4,6 @@ public class Kata
 {
 	public static string DuplicateEncode(string empty)
 	{
-		return "(";
+		return empty.Aggregate("", (s, _) => s + "(");
 	}
 }

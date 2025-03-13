@@ -4,13 +4,15 @@ namespace Test;
 
 public class KataTests
 {
-    [Fact(DisplayName = "Single char returns '('")]
-    public void SingleChar()
+    [Theory(DisplayName = "Unique chars are encoded as '('")]
+    [InlineData("a", "(")]
+    [InlineData("abc", "(((")]
+    public void UniqueChars(string word, string? expectedResult)
     {
         // act
-        var result = Kata.DuplicateEncode("a");
+        var result = Kata.DuplicateEncode(word);
         
         // assert
-        Assert.Equal("(", result);
+        Assert.Equal(expectedResult, result);
     }
 }
