@@ -4,8 +4,8 @@ namespace Test;
 
 public class KataTests
 {
-    [Fact]
-    public void Test1()
+    [Fact(DisplayName = "Single char returns '('")]
+    public void SingleChar()
     {
         // act
         var result = Kata.DuplicateEncode("a");
