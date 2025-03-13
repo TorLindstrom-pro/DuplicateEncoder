@@ -4,10 +4,13 @@ public class Kata
 {
 	public static string DuplicateEncode(string word)
 	{
-		return word.Aggregate("", (result, letter) => 
-			result + EncodeLetter(letter));
+		return word
+			.Select(EncodeLetter)
+			.Aggregate("", (result, letter) => result + letter);
 
 		string EncodeLetter(char currentLetter) => 
-			word.Count(letter => letter == currentLetter) > 1 ? ")" : "(";
+			word.Count(letter => letter == currentLetter) > 1 
+				? ")" 
+				: "(";
 	}
 }
