@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuplicateEncoder", "DuplicateEncoder\DuplicateEncoder.csproj", "{AE8269DF-CA9D-45F4-AE11-9A4EFBCE3C40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{BA94A79C-7B36-40AF-ACCC-6B7409D1F17B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE8269DF-CA9D-45F4-AE11-9A4EFBCE3C40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8269DF-CA9D-45F4-AE11-9A4EFBCE3C40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8269DF-CA9D-45F4-AE11-9A4EFBCE3C40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8269DF-CA9D-45F4-AE11-9A4EFBCE3C40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA94A79C-7B36-40AF-ACCC-6B7409D1F17B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA94A79C-7B36-40AF-ACCC-6B7409D1F17B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA94A79C-7B36-40AF-ACCC-6B7409D1F17B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA94A79C-7B36-40AF-ACCC-6B7409D1F17B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
