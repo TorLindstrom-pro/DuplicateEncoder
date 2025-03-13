@@ -7,6 +7,6 @@ public class KataTests
     [Fact]
     public void Test1()
     {
-        Kata.DuplicateEncode();
+        var result = Kata.DuplicateEncode("a");
     }
 }

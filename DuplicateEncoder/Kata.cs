@@ -2,8 +2,8 @@ namespace DuplicateEncoder;
 
 public class Kata
 {
-	public static void DuplicateEncode()
+	public static string DuplicateEncode(string empty)
 	{
-		
+		return string.Empty;
 	}
 }
